@@ -2,7 +2,11 @@ services:
         studentapp: 
             build: .
             ports:
-                - "8080:8080" 
+                - "8080:8080"
+        sample: 
+            build: .
+            ports:
+                - "80:80" 
             #volumes:
                 #- .:/app
             #networks:
