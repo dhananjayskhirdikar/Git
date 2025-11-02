@@ -21,16 +21,8 @@ RUN unzip templatemo_562_space_dynamic.zip && \
 
 
 #exposed port for the container
-EXPOSE 80 
+EXPOSE 3000 
 
 #command to run the apache server in foreground mode
 #CMD ["httpd-foreground"]
 CMD ["apache2ctl", "-D", "FOREGROUND"]
-
-
-
-
-
-
-
-
