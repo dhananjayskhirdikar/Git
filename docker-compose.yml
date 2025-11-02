@@ -1,10 +1,10 @@
 services: 
         studentapp: 
-            build: .
+            build: ./studentapp
             ports:
                 - "8080:8080"
         sample: 
-            build: .
+            build: ./sample
             ports:
                 - "5000:80"
             #volumes:
