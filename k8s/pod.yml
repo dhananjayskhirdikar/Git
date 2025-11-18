@@ -6,11 +6,11 @@ metadeta:
     app: nginx:latest
 spec: 
   containers:
-    - name: myconatainer
+    - name: mycontainer
       image: nginx
       ports: 
         - containerPort: 80
-        
+
      
 
 
