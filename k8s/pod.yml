@@ -3,11 +3,11 @@ kind: Pod
 metadata: 
   name: dk
   labels:
-    app: nginx
+    app: tomcat
 spec: 
   containers:
     - name: mycontainer
-      image: nginx
+      image: tomcat
       ports: 
         - containerPort: 80
 
@@ -19,7 +19,7 @@ metadata:
   name: myservice
 spec:
   selector:  
-    app: nginx
+    app: tomcat
   type: NodePort
   ports:
   - port: 80
