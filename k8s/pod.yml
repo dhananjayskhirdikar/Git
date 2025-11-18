@@ -20,6 +20,7 @@ metadata:
 spec:
   selector:  
     app: nginx
+  type: ClusterIP
   ports:
   - port: 80
     protocol: TCP  
