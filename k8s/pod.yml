@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadeta: 
+  name: dk
+  labels:
+    app: nginx:latest
+spec: 
+  containers:
+    - name: myconatainer
+      image: nginx
+      ports: 
+        - containerPort: 80
+        
+     
+
+
+
+

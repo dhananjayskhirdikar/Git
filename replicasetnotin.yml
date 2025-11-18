@@ -1,0 +1,23 @@
+apiVersion:  apps/v1  
+kind: ReplicaSet
+metadata: 
+  name: rs-notin
+  labels:
+    app:  rs-notin
+spec:   
+    selector: 
+      matchExpressions:
+            - {key: app, operator: otIn, values: [replicaset1 , replicaset2 , new-app ]}
+    replicas: 4 
+    template:
+          metadata: 
+            name: new-appnotin
+            labels:
+              app: new-appnotin
+          spec: 
+              containers: 
+                - name: nginx
+                  image: nginx:latest
+                  ports:  
+                  - containerPort: 80
+                    protocol: TCP

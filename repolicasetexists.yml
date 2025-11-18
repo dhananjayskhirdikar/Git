@@ -1,0 +1,23 @@
+apiVersion:  apps/v1  
+kind: ReplicaSet
+metadata: 
+  name: rs-exists
+  labels:
+    app:  rs-notexists
+spec:   
+    selector: 
+      matchExpressions:
+            - {key: app, operator: Exists}
+    replicas: 4 
+    template:
+          metadata: 
+            name: new-appexists'
+            labels:
+              app: new-appexists  
+          spec: 
+              containers: 
+                - name: nginx
+                  image: nginx:latest
+                  ports:  
+                  - containerPort: 80
+                    protocol: TCP
