@@ -3,7 +3,7 @@ kind: Pod
 metadeta: 
   name: dk
   labels:
-    app: nginx:latest
+    app: nginx
 spec: 
   containers:
     - name: mycontainer
