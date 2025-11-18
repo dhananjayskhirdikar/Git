@@ -27,11 +27,6 @@ spec:
 
 ---
 
-apiVersion: v1
-kind: Namespace
-metadata:
-  name:  my-namespace
-  labels:
-    environment: dev
+
 
 
