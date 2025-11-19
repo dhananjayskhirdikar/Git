@@ -8,11 +8,11 @@ spec:
     #matchLabels:
     #  app: nginx
     matchExpressions:
-      - {key: env , operator: In , values: [ab , dk , aru , shraa]}
+      - {key: env , operator: NotIn , values: [ab , dk , aru , shraa]}
   template: 
     metadata:  
         labels:
-          env: ab
+          env: amit
     spec:
       containers:
         - name: nginx
