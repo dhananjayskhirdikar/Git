@@ -5,12 +5,14 @@ metadata:
 spec:
   replicas: 5
   selector:
-    matchLabels:
-      app: nginx
+    #matchLabels:
+    #  app: nginx
+    matchExpressions:
+      - {key: env , operator: In , values: [ab , dk , aru , shraa]}
   template: 
     metadata:  
         labels:
-          app: nginx
+          env: dk
     spec:
       containers:
         - name: nginx
