@@ -12,7 +12,7 @@ spec:
   template: 
     metadata:  
         labels:
-          env: dk
+          env: ab
     spec:
       containers:
         - name: nginx
