@@ -3,18 +3,18 @@ kind: Deployment
 metadata:
   name: my-deployment
   labels:
-    app: my-deployment
+    name: my-deployment
 spec:
-    strategy:
+  strategy:
       type: RollingUpdate
       rollingUpdate:
         maxSurge: 1
         maxUnavailable: 1
-    selector:
+  selector:
       matchLabels: 
         app: my-deployment
-    replica: 3
-    template:
+  replica: 3
+  template:
       metadata:
         labels:
           app: my-deployment
