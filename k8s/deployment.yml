@@ -13,7 +13,7 @@ spec:
   selector:
       matchLabels: 
         app: my-deployment
-  replica: 3
+  replicas: 3
   template:
       metadata:
         labels:
