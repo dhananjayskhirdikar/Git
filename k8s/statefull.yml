@@ -13,8 +13,8 @@ metadata:
       metadata:
         labels:
           apps: my-statefullset
-    spec:
-      containers:
+      spec:
+        containers:
         - image: mysql
           name: my-statefullset-container
           ports: 
