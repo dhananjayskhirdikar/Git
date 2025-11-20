@@ -5,7 +5,7 @@ metadata:
   labels: 
     app: my-statefullset
   spec:
-  selector:
+    selector:
     matchLabels:
       app: my-statefullset
     replicas: 5
