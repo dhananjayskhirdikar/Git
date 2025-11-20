@@ -6,8 +6,8 @@ metadata:
     app: my-statefullset
   spec:
     selector:
-    matchLabels:
-      app: my-statefullset
+      matchLabels:
+        app: my-statefullset
     replicas: 5
     templete:
       metadata:
