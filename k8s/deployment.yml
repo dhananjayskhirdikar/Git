@@ -23,5 +23,5 @@ spec:
           - name: my-deployment-container
             image: nginx:latest
             ports:
-            - containerport: 80
+            - containerPort: 80
               protocol: TCP
