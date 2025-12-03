@@ -14,5 +14,5 @@ variable "webserver_disable_api_termination" {
     default = false
 }
 variable "webserver_count" {
-    default = 2
+    default = 3
 }
