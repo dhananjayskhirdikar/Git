@@ -1,21 +1,9 @@
-services: 
-        studentapp: 
-            build: ./studentapp
-            ports:
+services:   
+        studentapp:
+            build: .
+            ports: 
                 - "8080:8080"
-        sample: 
-            build: ./sample
-            ports:
-                - "5000:80"
-            #volumes:
-                #- .:/app
-            #networks:
-                #- host 
-        #todsapp:
-            #build: ../todsapp
-            #ports:
-                #- "9090:9090" 
-            #volumes:
-                #- ../todsapp:/app
-            #networks:
-                #- host        
+        sampleweb:
+            build: .
+            ports: 
+                - "80:80"
